@@ -59,5 +59,7 @@ jobs:
       run: npm audit fix
     - name: Install Playwright Browsers
       run: npx playwright install
+    - name: Run Application
+      run: npm start &
     - name: Run UI tests
       run: npm run test:ui
